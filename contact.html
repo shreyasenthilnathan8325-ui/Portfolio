@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Your Name</title>
+  <meta name="description" content="Contact information and an accessible contact form.">
+  <meta property="og:title" content="Contact | Your Name">
+  <meta property="og:description" content="Contact information and an accessible contact form.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B0C0F">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Homepage">NAME <span>/</span> PORTFOLIO</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a data-nav-link href="about.html">ABOUT</a>
+      <a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a>
+      <a data-nav-link href="projects.html">PROJECTS</a>
+      <div class="more" data-more>
+        <button class="more-toggle" data-more-toggle aria-expanded="false" aria-haspopup="true">MORE <span class="chevron">⌄</span></button>
+        <div class="dropdown" role="menu">
+          <a data-nav-link href="skills.html" role="menuitem">SKILLS</a>
+          <a data-nav-link href="achievements.html" role="menuitem">ACHIEVEMENTS</a>
+          <a data-nav-link href="courses.html" role="menuitem">COURSES</a>
+          <a data-nav-link href="publications.html" role="menuitem">PUBLICATIONS</a>
+          <a data-nav-link href="contact.html" role="menuitem">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="container">
+      <a data-nav-link href="about.html">ABOUT</a><a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a><a data-nav-link href="projects.html">PROJECTS</a>
+      <a data-nav-link href="skills.html">SKILLS</a><a data-nav-link href="achievements.html">ACHIEVEMENTS</a>
+      <a data-nav-link href="courses.html">COURSES</a><a data-nav-link href="publications.html">PUBLICATIONS</a>
+      <a data-nav-link href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero"><div class="container"><div class="section-label">10 / CONTACT</div><h1>CONTACT</h1><p>A simple, premium contact page with editable details and a Formspree-ready form.</p></div></section>
+<section class="section"><div class="container contact-grid">
+  <div class="reveal"><h2 class="contact-title">LET'S<br>CONNECT.</h2><div class="contact-info">
+    <div class="contact-row"><span>EMAIL</span><a href="mailto:your@email.com">ADD EMAIL</a></div>
+    <div class="contact-row"><span>LINKEDIN</span><a href="#">ADD LINK</a></div>
+    <div class="contact-row"><span>GITHUB</span><a href="#">ADD LINK</a></div>
+    <div class="contact-row"><span>INSTAGRAM</span><a href="#">ADD LINK</a></div>
+    <div class="contact-row"><span>WEBSITE</span><a href="#">ADD LINK</a></div>
+    <div class="contact-row"><span>LOCATION</span><span>ADD LOCATION</span></div>
+  </div></div>
+  <div class="reveal stagger-2">
+    <!-- ADD YOUR FORMSPREE ENDPOINT HERE -->
+    <form class="form" data-contact-form action="ADD_YOUR_FORMSPREE_ENDPOINT_HERE" method="POST">
+      <div class="field"><label for="name">NAME</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+      <div class="field"><label for="email">EMAIL</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="subject">SUBJECT</label><input id="subject" name="subject" type="text" required></div>
+      <div class="field"><label for="message">MESSAGE</label><textarea id="message" name="message" required></textarea></div>
+      <button class="btn btn-primary" type="submit">SEND MESSAGE <span class="arrow">→</span></button>
+      <div class="form-status" data-form-status aria-live="polite"></div>
+    </form>
+  </div>
+</div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span data-year></span> YOUR NAME</span>
+    <span>PERSONAL PORTFOLIO / EDITABLE FRAMEWORK</span>
+  </div>
+</footer>
+<button class="scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
+<script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

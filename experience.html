@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience | Your Name</title>
+  <meta name="description" content="A filterable archive of experience.">
+  <meta property="og:title" content="Experience | Your Name">
+  <meta property="og:description" content="A filterable archive of experience.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B0C0F">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Homepage">NAME <span>/</span> PORTFOLIO</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a data-nav-link href="about.html">ABOUT</a>
+      <a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a>
+      <a data-nav-link href="projects.html">PROJECTS</a>
+      <div class="more" data-more>
+        <button class="more-toggle" data-more-toggle aria-expanded="false" aria-haspopup="true">MORE <span class="chevron">⌄</span></button>
+        <div class="dropdown" role="menu">
+          <a data-nav-link href="skills.html" role="menuitem">SKILLS</a>
+          <a data-nav-link href="achievements.html" role="menuitem">ACHIEVEMENTS</a>
+          <a data-nav-link href="courses.html" role="menuitem">COURSES</a>
+          <a data-nav-link href="publications.html" role="menuitem">PUBLICATIONS</a>
+          <a data-nav-link href="contact.html" role="menuitem">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="container">
+      <a data-nav-link href="about.html">ABOUT</a><a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a><a data-nav-link href="projects.html">PROJECTS</a>
+      <a data-nav-link href="skills.html">SKILLS</a><a data-nav-link href="achievements.html">ACHIEVEMENTS</a>
+      <a data-nav-link href="courses.html">COURSES</a><a data-nav-link href="publications.html">PUBLICATIONS</a>
+      <a data-nav-link href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero"><div class="container"><div class="section-label">05 / EXPERIENCE</div><h1>EXPERIENCE</h1><p>A filterable archive for leadership, professional, event, volunteering, and other experiences.</p></div></section>
+<section class="section"><div class="container">
+  <div class="archive-controls" data-filter-group data-filter-target=".archive-item">
+    <button class="filter-btn active" data-filter="all">ALL</button><button class="filter-btn" data-filter="leadership">LEADERSHIP</button><button class="filter-btn" data-filter="professional">PROFESSIONAL</button><button class="filter-btn" data-filter="events">EVENTS</button><button class="filter-btn" data-filter="volunteering">VOLUNTEERING</button><button class="filter-btn" data-filter="other">OTHER</button>
+  </div>
+  <div class="archive">
+    <article class="archive-item reveal" data-category="leadership"><div class="archive-meta">YEAR / PERIOD · LEADERSHIP</div><h2>ROLE / EXPERIENCE</h2><p>ADD DESCRIPTION AND CONTRIBUTIONS HERE.</p><a class="archive-link" href="#">VIEW DETAILS →</a></article>
+    <article class="archive-item reveal stagger-1" data-category="professional"><div class="archive-meta">YEAR / PERIOD · PROFESSIONAL</div><h2>ROLE / EXPERIENCE</h2><p>ADD DESCRIPTION AND CONTRIBUTIONS HERE.</p><a class="archive-link" href="#">VIEW DETAILS →</a></article>
+    <article class="archive-item reveal" data-category="events"><div class="archive-meta">YEAR / PERIOD · EVENTS</div><h2>ROLE / EXPERIENCE</h2><p>ADD DESCRIPTION AND CONTRIBUTIONS HERE.</p><a class="archive-link" href="#">VIEW DETAILS →</a></article>
+    <article class="archive-item reveal stagger-1" data-category="volunteering"><div class="archive-meta">YEAR / PERIOD · VOLUNTEERING</div><h2>ROLE / EXPERIENCE</h2><p>ADD DESCRIPTION AND CONTRIBUTIONS HERE.</p><a class="archive-link" href="#">VIEW DETAILS →</a></article>
+  </div>
+</div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span data-year></span> YOUR NAME</span>
+    <span>PERSONAL PORTFOLIO / EDITABLE FRAMEWORK</span>
+  </div>
+</footer>
+<button class="scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
+<script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

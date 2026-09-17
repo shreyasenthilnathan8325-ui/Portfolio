@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achievements | Your Name</title>
+  <meta name="description" content="An editable archive of achievements.">
+  <meta property="og:title" content="Achievements | Your Name">
+  <meta property="og:description" content="An editable archive of achievements.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B0C0F">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Homepage">NAME <span>/</span> PORTFOLIO</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a data-nav-link href="about.html">ABOUT</a>
+      <a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a>
+      <a data-nav-link href="projects.html">PROJECTS</a>
+      <div class="more" data-more>
+        <button class="more-toggle" data-more-toggle aria-expanded="false" aria-haspopup="true">MORE <span class="chevron">⌄</span></button>
+        <div class="dropdown" role="menu">
+          <a data-nav-link href="skills.html" role="menuitem">SKILLS</a>
+          <a data-nav-link href="achievements.html" role="menuitem">ACHIEVEMENTS</a>
+          <a data-nav-link href="courses.html" role="menuitem">COURSES</a>
+          <a data-nav-link href="publications.html" role="menuitem">PUBLICATIONS</a>
+          <a data-nav-link href="contact.html" role="menuitem">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="container">
+      <a data-nav-link href="about.html">ABOUT</a><a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a><a data-nav-link href="projects.html">PROJECTS</a>
+      <a data-nav-link href="skills.html">SKILLS</a><a data-nav-link href="achievements.html">ACHIEVEMENTS</a>
+      <a data-nav-link href="courses.html">COURSES</a><a data-nav-link href="publications.html">PUBLICATIONS</a>
+      <a data-nav-link href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero"><div class="container"><div class="section-label">07 / ACHIEVEMENTS</div><h1>ACHIEVEMENTS</h1><p>Use this space for verified achievements, awards, recognitions, and milestones.</p></div></section>
+<section class="section"><div class="container"><div class="achievement-grid">
+  <article class="achievement reveal"><div class="icon-box">ICON / 01</div><h2>ACHIEVEMENT TITLE</h2><p>ORGANISATION · YEAR<br>ADD SHORT DESCRIPTION.</p></article>
+  <article class="achievement reveal stagger-1"><div class="icon-box">ICON / 02</div><h2>ACHIEVEMENT TITLE</h2><p>ORGANISATION · YEAR<br>ADD SHORT DESCRIPTION.</p></article>
+  <article class="achievement reveal stagger-2"><div class="icon-box">ICON / 03</div><h2>ACHIEVEMENT TITLE</h2><p>ORGANISATION · YEAR<br>ADD SHORT DESCRIPTION.</p></article>
+  <article class="achievement reveal"><div class="icon-box">ICON / 04</div><h2>ACHIEVEMENT TITLE</h2><p>ORGANISATION · YEAR<br>ADD SHORT DESCRIPTION.</p></article>
+  <article class="achievement reveal stagger-1"><div class="icon-box">ICON / 05</div><h2>ACHIEVEMENT TITLE</h2><p>ORGANISATION · YEAR<br>ADD SHORT DESCRIPTION.</p></article>
+</div></div></section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span data-year></span> YOUR NAME</span>
+    <span>PERSONAL PORTFOLIO / EDITABLE FRAMEWORK</span>
+  </div>
+</footer>
+<button class="scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
+<script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

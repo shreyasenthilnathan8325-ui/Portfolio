@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Your Name</title>
+  <meta name="description" content="A premium, editable personal portfolio framework.">
+  <meta property="og:title" content="Portfolio | Your Name">
+  <meta property="og:description" content="A premium, editable personal portfolio framework.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B0C0F">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Homepage">NAME <span>/</span> PORTFOLIO</a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a data-nav-link href="about.html">ABOUT</a>
+      <a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a>
+      <a data-nav-link href="projects.html">PROJECTS</a>
+      <div class="more" data-more>
+        <button class="more-toggle" data-more-toggle aria-expanded="false" aria-haspopup="true">MORE <span class="chevron">⌄</span></button>
+        <div class="dropdown" role="menu">
+          <a data-nav-link href="skills.html" role="menuitem">SKILLS</a>
+          <a data-nav-link href="achievements.html" role="menuitem">ACHIEVEMENTS</a>
+          <a data-nav-link href="courses.html" role="menuitem">COURSES</a>
+          <a data-nav-link href="publications.html" role="menuitem">PUBLICATIONS</a>
+          <a data-nav-link href="contact.html" role="menuitem">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="container">
+      <a data-nav-link href="about.html">ABOUT</a><a data-nav-link href="academic-journey.html">JOURNEY</a>
+      <a data-nav-link href="experience.html">EXPERIENCE</a><a data-nav-link href="projects.html">PROJECTS</a>
+      <a data-nav-link href="skills.html">SKILLS</a><a data-nav-link href="achievements.html">ACHIEVEMENTS</a>
+      <a data-nav-link href="courses.html">COURSES</a><a data-nav-link href="publications.html">PUBLICATIONS</a>
+      <a data-nav-link href="contact.html">CONTACT</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="eyebrow">WELCOME / PORTFOLIO</div>
+      <h1><span>YOUR</span><span>NAME</span></h1>
+      <div class="role-line"><span data-role>Student</span><span class="role-cursor" aria-hidden="true"></span></div>
+      <!-- ADD YOUR INTRODUCTION HERE -->
+      <p class="hero-copy">A short introduction goes here. Replace this text with a concise statement about who you are, what you do, and what you are building toward.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="projects.html">EXPLORE MY WORK <span class="arrow">→</span></a>
+        <!-- ADD YOUR RESUME FILE HERE -->
+        <a class="btn btn-secondary" href="assets/documents/resume.pdf">DOWNLOAD RÉSUMÉ <span class="arrow">↓</span></a>
+      </div>
+    </div>
+    <div class="identity-art reveal stagger-2" aria-label="Profile identity composition">
+      <div class="portrait-placeholder">
+        <!-- ADD YOUR PROFILE IMAGE HERE -->
+        <div class="placeholder-copy">PROFILE IMAGE<br>assets/images/profile.jpg</div>
+      </div>
+      <div class="monogram">YN</div>
+      <div class="art-meta">YOUR NAME / PERSONAL ARCHIVE / 2026</div>
+    </div>
+  </div>
+</section>
+<section class="quick-nav">
+  <div class="container quick-grid">
+    <a class="quick-item reveal" href="about.html"><span class="quick-number">01</span><h2>ABOUT</h2><p>A little about me</p><span class="quick-arrow">→</span></a>
+    <a class="quick-item reveal stagger-1" href="academic-journey.html"><span class="quick-number">02</span><h2>JOURNEY</h2><p>Education & growth</p><span class="quick-arrow">→</span></a>
+    <a class="quick-item reveal stagger-2" href="experience.html"><span class="quick-number">03</span><h2>EXPERIENCE</h2><p>What I have done</p><span class="quick-arrow">→</span></a>
+    <a class="quick-item reveal stagger-3" href="projects.html"><span class="quick-number">04</span><h2>PROJECTS</h2><p>Things I have built</p><span class="quick-arrow">→</span></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span data-year></span> YOUR NAME</span>
+    <span>PERSONAL PORTFOLIO / EDITABLE FRAMEWORK</span>
+  </div>
+</footer>
+<button class="scroll-top" data-scroll-top aria-label="Scroll to top">↑</button>
+<script>document.querySelectorAll("[data-year]").forEach(el => el.textContent = new Date().getFullYear());</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
